@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>Electronics Essentials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorial2.html">Previous tutorial</a>
+    </nav>
+    <section>
+        <h2>Electronics Essentials</h2>
+        <p>Learn about key components like resistors, capacitors, and microcontrollers used in robotics.</p>
+        <img src="img/tutorial3.jpg" alt="Electronics Essentials">
+    </section>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Electronics play a critical role in robotics, providing the necessary hardware to control motors, read sensor data, and communicate with other devices. In this tutorial, we'll cover the basic components that you'll use in your robotics projects.</p>
+
+        <h3>Section 1: Basic Components</h3>
+        <h4>Resistors</h4>
+        <p>A resistor limits the flow of electric current in a circuit. They're used to control the current flowing to sensitive components.</p>
+        <p><strong>Unit:</strong> Ohms (Ω)</p>
+        <p>Example: In an LED circuit, a resistor ensures the current doesn't burn out the LED.</p>
+
+        <h4>Capacitors</h4>
+        <p>A capacitor stores electrical energy and releases it when needed. They're often used to smooth voltage spikes or stabilize power supplies.</p>
+        <p><strong>Unit:</strong> Farads (F)</p>
+
+        <h4>LEDs (Light Emitting Diodes)</h4>
+        <p>LEDs are used to display status or give feedback in a circuit. They only allow current to flow in one direction.</p>
+        <p>Example: An LED on your robot might turn on when the battery is charged.</p>
+
+        <h3>Section 2: Microcontrollers</h3>
+        <p>Microcontrollers are the brains of your robot, where your code runs. They take input from sensors, process it, and control outputs like motors.</p>
+        <p><strong>Examples:</strong> Arduino, Raspberry Pi, ESP32</p>
+        <pre>
+            // Arduino Example
+            int ledPin = 13;  // Define pin 13 for the LED
+            void setup() {
+                pinMode(ledPin, OUTPUT);  // Set the LED pin as output
+            }
+            void loop() {
+                digitalWrite(ledPin, HIGH);  // Turn on LED
+                delay(1000);  // Wait for 1 second
+                digitalWrite(ledPin, LOW);   // Turn off LED
+                delay(1000);  // Wait for 1 second
+            }
+        </pre>
+
+        <h3>Section 3: Sensors</h3>
+        <p>Sensors are used to detect the environment and provide input to your robot. Here are a few common sensors:</p>
+        <h4>Ultrasonic Sensor (Distance Measurement)</h4>
+        <p>It uses sound waves to measure the distance to an object.</p>
+        <pre>
+            #include <NewPing.h>
+            NewPing sonar(12, 13, 200);  // (Trig pin, Echo pin, Max distance)
+        </pre>
+
+        <h4>Infrared (IR) Sensors</h4>
+        <p>These sensors detect obstacles using infrared light. Commonly used for line-following robots.</p>
+
+        <h4>Temperature Sensor</h4>
+        <p>A temperature sensor can measure the ambient temperature, often used for robots with temperature-sensitive parts.</p>
+
+        <h3>Section 4: Motors and Actuators</h3>
+        <p>Motors allow your robot to move. Depending on your robot's design, you can use different types of motors:</p>
+        <h4>DC Motors</h4>
+        <p>These are simple motors that spin continuously in one direction when powered.</p>
+        <h4>Servo Motors</h4>
+        <p>These motors rotate to a specific angle, making them perfect for precise movements.</p>
+        <h4>Stepper Motors</h4>
+        <p>These motors rotate in precise steps, offering highly accurate positioning.</p>
+
+        <pre>
+            // Example for controlling a motor with Arduino
+            int motorPin = 9;
+            void setup() {
+                pinMode(motorPin, OUTPUT);
+            }
+            void loop() {
+                digitalWrite(motorPin, HIGH);  // Turn motor on
+                delay(1000);                    // Wait for 1 second
+                digitalWrite(motorPin, LOW);   // Turn motor off
+                delay(1000);                    // Wait for 1 second
+            }
+        </pre>
+
+        <h3>Conclusion</h3>
+        <p>Now that you understand the fundamental electronic components used in robotics, you can start building circuits to power your robot. Experiment with different sensors, actuators, and microcontrollers to bring your ideas to life!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Robotics Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
