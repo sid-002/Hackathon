@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.jpg">
+</head>
+<body>
+    <header>
+        <h1>Programming Basics</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tutorial1.html">Previous tutorial</a>
+        <a href="tutorial3.html">Next Tutorial</a>
+    </nav>
+
+    <div class="content">
+        <section>
+            <h2>Programming Fundamentals for Robotics</h2>
+            <p>This tutorial will cover programming fundamentals, including variables, loops, and conditional statements in Python and C++.</p>
+            <img src="img/tutorial2.jpg" alt="Programming Basics">
+        </section>
+
+        <h3>Section 1: Understanding Variables and Data Types</h3>
+        <p>Variables are used to store data that your program can manipulate. In robotics, variables store values like sensor readings or robot positions.</p>
+        <pre>
+            # Python Example
+            speed = 10  # speed is a variable storing an integer value
+        </pre>
+        <pre>
+            // C++ Example
+            int speed = 10;  // speed is a variable storing an integer value
+        </pre>
+
+        <h3>Section 2: Control Flow - If, Else, and Loops</h3>
+        <p>If-Else Statements are used to make decisions based on conditions.</p>
+        <pre>
+            # Python Example
+            if speed > 5:
+                print("Speed is high!")
+            else:
+                print("Speed is low!")
+        </pre>
+        <pre>
+            // C++ Example
+            if (speed > 5) {
+                cout << "Speed is high!" << endl;
+            } else {
+                cout << "Speed is low!" << endl;
+            }
+        </pre>
+
+        <h3>Section 3: Functions and Modular Programming</h3>
+        <p>Functions are blocks of reusable code that perform specific tasks. In robotics, you can use functions to control robot actions like moving forward or turning.</p>
+        <pre>
+            # Python Example
+            def move_forward():
+                print("Moving forward")
+            move_forward()
+        </pre>
+        <pre>
+            // C++ Example
+            void moveForward() {
+                cout << "Moving forward" << endl;
+            }
+            moveForward();
+        </pre>
+
+        <h3>Section 4: Using Libraries and Modules</h3>
+        <p>In robotics, many pre-built libraries can be used to interact with hardware like sensors and motors.</p>
+        <pre>
+            # Python Example
+            import RPi.GPIO as GPIO  # Importing a library to control Raspberry Pi's GPIO pins
+        </pre>
+        <pre>
+            // C++ Example
+            #include <WiringPi.h>  // Library to interact with Raspberry Pi's GPIO pins
+        </pre>
+
+        <h3>Conclusion</h3>
+        <p>By learning these basic programming concepts, you are now ready to start writing more complex code that can control robots. As you build projects, you'll apply these fundamentals in real-world scenarios!</p>
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Robotics Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
